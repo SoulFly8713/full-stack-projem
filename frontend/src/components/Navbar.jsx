@@ -20,15 +20,23 @@ const Navbar = ({ isAuthenticated, isAdmin, onLogout }) => {
           <div className="hidden md:flex items-center space-x-8">
             <Link
               to="/"
-              className={`text-sm font-mono uppercase tracking-wider transition-colors ${
+              className={`text-sm font-bold uppercase tracking-wider transition-colors ${
                 isActive('/') ? 'text-white' : 'text-gray-400 hover:text-white'
               }`}
             >
               Projeler
             </Link>
             <Link
+              to="/vendetta-security"
+              className={`text-sm font-bold uppercase tracking-wider transition-colors ${
+                isActive('/vendetta-security') ? 'text-red-500' : 'text-gray-400 hover:text-red-400'
+              }`}
+            >
+              Vendetta Security
+            </Link>
+            <Link
               to="/testimonials"
-              className={`text-sm font-mono uppercase tracking-wider transition-colors ${
+              className={`text-sm font-bold uppercase tracking-wider transition-colors ${
                 isActive('/testimonials') ? 'text-white' : 'text-gray-400 hover:text-white'
               }`}
             >
@@ -36,7 +44,7 @@ const Navbar = ({ isAuthenticated, isAdmin, onLogout }) => {
             </Link>
             <Link
               to="/contact"
-              className={`text-sm font-mono uppercase tracking-wider transition-colors ${
+              className={`text-sm font-bold uppercase tracking-wider transition-colors ${
                 isActive('/contact') ? 'text-white' : 'text-gray-400 hover:text-white'
               }`}
             >
