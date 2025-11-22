@@ -96,16 +96,25 @@ const Navbar = ({ isAuthenticated, isAdmin, onLogout }) => {
             <Link
               to="/"
               onClick={() => setMobileMenuOpen(false)}
-              className={`block text-sm font-mono uppercase tracking-wider ${
+              className={`block text-sm font-bold uppercase tracking-wider ${
                 isActive('/') ? 'text-white' : 'text-gray-400'
               }`}
             >
               Projeler
             </Link>
             <Link
+              to="/vendetta-security"
+              onClick={() => setMobileMenuOpen(false)}
+              className={`block text-sm font-bold uppercase tracking-wider ${
+                isActive('/vendetta-security') ? 'text-red-500' : 'text-gray-400'
+              }`}
+            >
+              Vendetta Security
+            </Link>
+            <Link
               to="/testimonials"
               onClick={() => setMobileMenuOpen(false)}
-              className={`block text-sm font-mono uppercase tracking-wider ${
+              className={`block text-sm font-bold uppercase tracking-wider ${
                 isActive('/testimonials') ? 'text-white' : 'text-gray-400'
               }`}
             >
@@ -114,7 +123,7 @@ const Navbar = ({ isAuthenticated, isAdmin, onLogout }) => {
             <Link
               to="/contact"
               onClick={() => setMobileMenuOpen(false)}
-              className={`block text-sm font-mono uppercase tracking-wider ${
+              className={`block text-sm font-bold uppercase tracking-wider ${
                 isActive('/contact') ? 'text-white' : 'text-gray-400'
               }`}
             >
