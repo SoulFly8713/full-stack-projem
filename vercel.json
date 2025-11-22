@@ -4,21 +4,16 @@
       "source": "/api/(.*)",
       "destination": "/backend/server.py"
     },
-    // Front-end'in 404 hatalarını çözmek için:
-    // Dosya yapınızdaki public klasörünü kullanıyoruz.
     {
       "source": "/(.*)",
       "destination": "/frontend/public/index.html"
     }
   ],
   "builds": [
-    // Backend'i Vercel Python Runtime ile derle
     {
       "src": "backend/server.py",
       "use": "@vercel/python"
     },
-    // 🚨 Frontend Build Komutunu Zorunlu Olarak Ekliyoruz 🚨
-    // Bu, Backend derlenirken Frontend'in de hazırlanmasını sağlar.
     {
       "src": "frontend/package.json",
       "use": "@vercel/static-build",
@@ -29,3 +24,4 @@
     }
   ]
 }
+
