@@ -8,6 +8,7 @@ import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Admin from "./pages/Admin";
+import VendettaSecurity from "./pages/VendettaSecurity";
 
 function App() {
   const [user, setUser] = useState(null);
