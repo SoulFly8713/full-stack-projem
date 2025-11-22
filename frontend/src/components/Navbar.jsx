@@ -135,7 +135,7 @@ const Navbar = ({ isAuthenticated, isAdmin, onLogout }) => {
                   <Link
                     to="/admin"
                     onClick={() => setMobileMenuOpen(false)}
-                    className={`block text-sm font-mono uppercase tracking-wider ${
+                    className={`block text-sm font-bold uppercase tracking-wider ${
                       isActive('/admin') ? 'text-white' : 'text-gray-400'
                     }`}
                   >
@@ -147,7 +147,7 @@ const Navbar = ({ isAuthenticated, isAdmin, onLogout }) => {
                     onLogout();
                     setMobileMenuOpen(false);
                   }}
-                  className="w-full text-left text-sm font-mono uppercase tracking-wider text-gray-400"
+                  className="w-full text-left text-sm font-bold uppercase tracking-wider text-gray-400"
                 >
                   Çıkış Yap
                 </button>
@@ -156,7 +156,7 @@ const Navbar = ({ isAuthenticated, isAdmin, onLogout }) => {
               <Link
                 to="/login"
                 onClick={() => setMobileMenuOpen(false)}
-                className="block text-sm font-mono uppercase tracking-wider text-gray-400"
+                className="block text-sm font-bold uppercase tracking-wider text-gray-400"
               >
                 Giriş Yap
               </Link>
