@@ -40,6 +40,7 @@ function App() {
         />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/vendetta-security" element={<VendettaSecurity />} />
           <Route 
             path="/testimonials" 
             element={
