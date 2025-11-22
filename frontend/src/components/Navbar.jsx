@@ -64,7 +64,7 @@ const Navbar = ({ isAuthenticated, isAdmin, onLogout }) => {
                 )}
                 <button
                   onClick={onLogout}
-                  className="px-4 py-2 bg-white text-black text-xs font-mono uppercase tracking-wider rounded-full hover:bg-gray-200 transition-all"
+                  className="px-4 py-2 bg-white text-black text-xs font-bold uppercase tracking-wider rounded-full hover:bg-gray-200 transition-all"
                 >
                   Çıkış Yap
                 </button>
@@ -72,7 +72,7 @@ const Navbar = ({ isAuthenticated, isAdmin, onLogout }) => {
             ) : (
               <Link
                 to="/login"
-                className="px-4 py-2 bg-white text-black text-xs font-mono uppercase tracking-wider rounded-full hover:bg-gray-200 transition-all"
+                className="px-4 py-2 bg-white text-black text-xs font-bold uppercase tracking-wider rounded-full hover:bg-gray-200 transition-all"
               >
                 Giriş Yap
               </Link>
